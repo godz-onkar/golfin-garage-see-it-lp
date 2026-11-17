@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Golfin' Garage See It Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#131313;--paper:#F3F2F2;--accent:#E37125;--line:rgba(19,19,19,.12)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+.top{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;padding:24px 28px 16px}
+h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;letter-spacing:-.02em;margin:0}
+.top p{margin:6px 0 0;font-size:14px;color:#555;max-width:720px}
+.top a{color:var(--ink)}
+.controls{display:flex;flex-wrap:wrap;gap:10px}
+.tabs{display:flex;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{border:0;background:transparent;font:600 14px Inter,sans-serif;padding:9px 16px;border-radius:999px;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--ink);color:#fff}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.stage{display:grid;grid-template-columns:1fr 430px;gap:28px;padding:8px 28px 40px;align-items:start}
+.stage.d{grid-template-columns:1fr}
+.stage.m{grid-template-columns:430px;justify-content:center}
+.stage.d .mob,.stage.m .desk{display:none}
+.label{font:600 12px Inter,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#666;margin:0 0 10px}
+.dframe{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(19,19,19,.08)}
+.bar{height:30px;display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid var(--line);background:#fafafa}
+.bar i{width:9px;height:9px;border-radius:50%;background:#ddd}
+.dwrap{position:relative;overflow:hidden}
+.dwrap iframe{position:absolute;top:0;left:0;width:1440px;height:900px;border:0;transform-origin:0 0}
+.phone{width:430px;background:#111;border-radius:48px;padding:20px;box-shadow:0 18px 50px rgba(19,19,19,.18)}
+.phone iframe{display:block;width:390px;height:844px;border:0;border-radius:30px;background:#171a1a}
+@media (max-width:1100px){.stage{grid-template-columns:1fr}.mob{justify-self:center}}
+@media (max-width:480px){.phone{width:100%;padding:10px;border-radius:30px}.phone iframe{width:100%}.stage{padding:8px 12px 32px}.top{padding:20px 16px 12px}}
+.notes{max-width:980px;margin:0 auto;padding:8px 28px 72px}
+.notes h2{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:24px;letter-spacing:-.02em;margin:40px 0 6px}
+.notes h3{font-family:"Inter Tight",Inter,sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;margin:28px 0 8px}
+.notes p,.notes li{font-size:15px;line-height:1.6;color:#333}
+.notes p.lede{color:#555;margin-top:0}
+.notes ol,.notes ul{padding-left:20px;margin:8px 0}
+.notes li{margin:4px 0}
+.notes li b{color:var(--ink)}
+.notes a{color:var(--ink)}
+.notes .rule{border:0;border-top:1px solid var(--line);margin:40px 0 0}
+@media (max-width:480px){.notes{padding:8px 16px 56px}}
+</style>
+</head>
+<body>
+<div class="top">
+  <div>
+    <h1>Golfin' Garage: /see-it video page</h1>
+    <p>Layout preview for <code>build.golfingarage.com/see-it</code>, desktop at 1440 and mobile at 390. Scroll inside each frame. Every video is a YouTube embed and plays right on the page. <b>Launch day</b> shows only what plays today (the YouTube videos). <b>All sections</b> shows every slot, including the ones still waiting to go on YouTube, and Finley's draft note. <a href="page.html">Open the page on its own</a> · <a href="docs/see-it-brief.md">Read the brief</a> · <a href="ghl-custom-code.html" download>GHL code</a>.</p>
+  </div>
+  <div class="controls">
+    <div class="tabs" role="tablist" aria-label="Content">
+      <button class="on" data-c="" role="tab">Launch day</button>
+      <button data-c="?review=1" role="tab">All sections</button>
+    </div>
+    <div class="tabs" role="tablist" aria-label="View">
+      <button class="on" data-v="" role="tab">Both</button>
+      <button data-v="d" role="tab">Desktop</button>
+      <button data-v="m" role="tab">Mobile</button>
+    </div>
+  </div>
+</div>
+<div class="stage" id="stage">
+  <div class="desk">
+    <p class="label">Desktop · 1440</p>
+    <div class="dframe"><div class="bar"><i></i><i></i><i></i></div><div class="dwrap" id="dwrap"><iframe id="dfr" src="page.html" title="Desktop layout" allow="autoplay; encrypted-media; picture-in-picture; fullscreen"></iframe></div></div>
+  </div>
+  <div class="mob">
+    <p class="label">Mobile · 390</p>
+    <div class="phone"><iframe id="mfr" src="page.html" title="Mobile layout" allow="autoplay; encrypted-media; picture-in-picture; fullscreen"></iframe></div>
+  </div>
+</div>
+
+<section class="notes">
+  <hr class="rule">
+  <h2>Layout and build notes</h2>
+  <p class="lede">The page has one job: get a lead excited between our emails and texts, then send them to the meeting with Trey. Leads reach it from buttons in the emails, never from ads. When you give feedback, name the section.</p>
+
+  <h3>How the page is built</h3>
+  <ol>
+    <li><b>Header.</b> The live template's header: logo, phone and "Pick a Time With Trey".</li>
+    <li><b>Opening.</b> "From Bare Steel to Your Driveway." with jump links to each section and how many videos each one has. Email buttons land straight on their section, for example <code>/see-it#frame</code>.</li>
+    <li><b>Meet Trey.</b> Trey's intro clip. Hidden until the clip exists.</li>
+    <li><b>01 The build.</b> Frame, body and paint copy, four build facts, a main video and the shop Shorts.</li>
+    <li><b>02 The whole story.</b> The 11-minute build video, full width, plus the explainer ad.</li>
+    <li><b>A note from the owner.</b> Finley's note. Draft, hidden until Finley approves it.</li>
+    <li><b>03 Up close.</b> Three detail Shorts: dash, walkaround, trim.</li>
+    <li><b>04 For whoever rides with you.</b> The spouse video and the "didn't tell husband" video, with "Pick a Time for Both of You".</li>
+    <li><b>05 Delivery day.</b> A real owner's delivery video.</li>
+    <li><b>06 Out and about.</b> The coffee run, "The Truck You Grew Up Wanting", the neighborhood loop and three more reels.</li>
+    <li><b>Facts and closing.</b> 100+ built since 2020, Jasper, the VIN, lower 48 delivery. Then "Design Yours With Trey" and the calendar button.</li>
+    <li><b>Footer and phone bar.</b> The live template's footer, and the sticky Call / Pick a Time bar on phones.</li>
+  </ol>
+
+  <h3>Design choices</h3>
+  <ul>
+    <li><b>Same look as the live dark pages.</b> Built on the Build Book page's own code: charcoal background, orange buttons, condensed uppercase headings. Header, footer and fonts are unchanged.</li>
+    <li><b>Every video is a YouTube embed that plays on the page.</b> Nothing autoplays, and players lower down load only as you scroll to them. Starting one pauses the others.</li>
+    <li><b>Built for phones first.</b> One video per row on a phone, placed right under each heading. Long rows show two videos, then a "Show more videos" button.</li>
+    <li><b>No empty players.</b> A slot without a YouTube ID stays hidden, and so does a section with no videos. The page can go live today and fill in as videos go on YouTube.</li>
+  </ul>
+
+  <h3>Before this goes live</h3>
+  <ul>
+    <li><b>Videos onto YouTube.</b> Upload the Meta ad videos and Instagram reels to the Golfin' Garage YouTube channel (unlisted is fine) and put each ID into its slot. The brief lists every slot.</li>
+    <li><b>Watch every video end to end</b> for Bronco or Ford names, golf courses, holiday deadlines, financing, speed or build-time claims.</li>
+    <li><b>The 11-minute video</b> mentions the PGA Show. Decide whether to use it now or wait for a cut.</li>
+    <li><b>Finley's note</b> needs Finley's approval or rewrite.</li>
+  </ul>
+</section>
+<script>
+const stage=document.getElementById('stage'),wrap=document.getElementById('dwrap'),fr=document.getElementById('dfr'),mfr=document.getElementById('mfr');
+function fit(){const s=Math.min(1,wrap.clientWidth/1440);fr.style.transform='scale('+s+')';wrap.style.height=(900*s)+'px';}
+function setView(v){
+  document.querySelectorAll('[data-v]').forEach(x=>{const on=x.dataset.v===v;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
+  stage.className='stage'+(v?' '+v:'');requestAnimationFrame(fit);
+}
+function setContent(c){
+  document.querySelectorAll('[data-c]').forEach(x=>{const on=x.dataset.c===c;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
+  fr.src='page.html'+c; mfr.src='page.html'+c;
+}
+new ResizeObserver(fit).observe(wrap);fit();
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>setView(b.dataset.v));
+document.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>setContent(b.dataset.c));
+const h=location.hash.replace('#','');setView(h==='desktop'?'d':h==='mobile'?'m':'');
+</script>
+</body>
+</html>
