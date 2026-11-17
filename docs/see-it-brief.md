@@ -77,7 +77,7 @@
 | 10 | Closing call to action | "Design Yours With Trey" · button · booked line · phone | — |
 | 11 | Footer + phone bar | The live template's footer and sticky phone bar | — |
 
-**On launch day,** with only the YouTube videos, the page shows 3 sections and 7 videos. Each video added to YouTube makes its section appear.
+**On launch day,** with only the YouTube videos, the page shows 3 sections and 6 videos. Each video added to YouTube makes its section appear.
 
 ## 4. Design
 
@@ -171,18 +171,17 @@
 - No rendering language.
 - Facts come only from the approved list or from approved W14, W15 and W4 copy.
 
-## 6. Videos (19 slots)
+## 6. Videos (18 slots)
 
 | Section | Video | Source | Length | Status |
 |---|---|---|---|---|
 | Meet Trey | Trey's intro | Not filmed yet (L6) | ~1 min | Need |
 | `#frame` main | Chassis Underneath ("Retro on the outside. Built for right now underneath.") | Meta 1108787821511122 | 0:58 | Needs to go on YouTube. A Short stands in |
 | `#frame` row | "Building the beast!" | YouTube Short e6LHUT7vmLg | short | **Live** (hidden while it's also the main) |
-| `#frame` row | "Inside Golfin' Garage!" | YouTube Short vXPJgSgycCI | short | **Live** |
 | `#frame` row | "Work inside the garage!" | YouTube Short WuSkZReuBss | short | **Live** |
 | `#whole-story` | **"You Won't Believe What We Built In 4.5 Days…"** (long-form) | YouTube vG8f0bwUCB4 | 10:59 | **Live**, see D2 |
 | `#whole-story` | The explainer ad (Ayush's "Vox-style explainer") | Ayush's file | ? | Needs to go on YouTube |
-| `#details` | "Luxury from every angle!" (dash and teak floor) | YouTube Short xrmbkT2kpQk | short | **Live** |
+| `#details` | "Luxury from every angle!" (dash and teak floor) | YouTube Short xrmbkT2kpQk | short | **Live**. Has a music track ("Aces", dkj); plays on the page today, but check it on a phone after publishing |
 | `#details` | "Simple. Refined. Ready." (walkaround) | YouTube Short qgl14S7Sqmk | short | **Live** |
 | `#details` | "Yellow beast!" (walkaround) | YouTube Short icWAkbUZWFw | short | **Live** |
 | `#shotgun` | Spouse video ("she won't stop riding in it") | Meta 1147298017532819 | 0:35 | Needs to go on YouTube |
@@ -199,6 +198,7 @@
 
 | Video | Why |
 |---|---|
+| "Inside Golfin' Garage!" (YouTube Short vXPJgSgycCI) | Its soundtrack is a commercial song (Yeat, "COME N GO"). YouTube can block songs like that from playing on other websites, by country or device, and the player then shows "Video unavailable". **Rule for every video on this page: no licensed music.** Ask Rabih for a version with no music or the original audio |
 | "Golfin' Garage Retro Ride" Q&A (YouTube YbWxbvOPjys, 3:00; the hidden "film" on the landing page) | Shows a Porsche and says "47 or 48 mph." Kept for research only |
 | "Bronco Dream" ads, the GolfCartingTV shop tour, Bronco-titled Shorts | The Bronco name |
 | "Red beast unleashed!" (5YW6mdWQ9eY), "Clean. Sharp. Untouchable." (wOHhuCgCZ9Y) | Grille and body read as a Bronco. Could be added after a check |
@@ -209,6 +209,7 @@
 **Before any video goes up, someone watches it all the way through.** Check for:
 - Bronco or Ford names, golf courses, holiday deadlines, financing.
 - A spoken speed or a build-time promise.
+- A commercial song in the soundtrack. After uploading, check YouTube Studio → Copyright for a claim; a claimed song can make the video unavailable on this page.
 
 The research lists these as client-approved or their own posts, but I haven't watched them end to end.
 
@@ -253,7 +254,7 @@ The `#` jump always goes **after** the UTMs.
 |---|---|---|
 | S1 | One page, many videos in sections, no variants? | **Yes** |
 | S2 | Every button goes to `/design-meeting` (free calendar)? | **Yes** |
-| S3 | Go live with the YouTube videos (3 sections, 7 videos), and let the rest appear as each one goes on YouTube? | **Yes** |
+| S3 | Go live with the YouTube videos (3 sections, 6 videos), and let the rest appear as each one goes on YouTube? | **Yes** |
 | D2 | The long-form video: the earlier decision was to cut out its PGA Show mentions first. Use the full YouTube video now, or wait for Rabih's cut? | **Use it now, with the "built against a deadline" line**, and swap in the cut when it's ready. Say no if any PGA mention is a deal-breaker |
 | D3 | Finley's note: send the draft to Finley to approve or rewrite? | **Yes.** It stays hidden until Finley answers |
 | S4 | Copy in section 5? | Approve or mark up |
