@@ -94,7 +94,7 @@
 
 **Video players:**
 - **Shape.** Reels and Shorts play in vertical 9:16 frames. The long-form video plays full width in 16:9, up to 1,100 px. Each card has a `data-ratio` setting to match its file.
-- **Standard YouTube embeds.** Every video is a YouTube player on the page, with YouTube's own thumbnail and play button. Nothing autoplays, and players lower on the page load only as the visitor scrolls to them. Starting one video pauses the others.
+- **YouTube embeds with our own cover.** Every video is a YouTube player on the page. Before it plays, a cover with the video's thumbnail and our orange play button sits over YouTube's start screen, so the red Shorts logo and title bar don't show. The tap goes straight through to YouTube's player, so it plays with sound on phones. The cover comes back when a Short pauses or ends, which also hides YouTube's "more videos" screen. While a Short is playing, YouTube still shows its small Shorts label and like/share buttons; no embed setting removes those. Nothing autoplays, and players lower on the page load only as the visitor scrolls to them. Starting one video pauses the others.
 - **Each card shows** the player and a caption.
 - **Phones:** one video per row, about 340 px wide. In each section the video comes right after the heading and opening line, before the fact list and button. Rows with more than 2 videos show 2, then a "Show more videos" button.
 - **Grid.** 4 per row on desktop, 3 on tablet, 1 on a phone.
