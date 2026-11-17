@@ -550,7 +550,7 @@ html:has(#gg-root),body:has(#gg-root){background:#171a1a!important}
 </div>
 </section>
 
-<!-- TREY'S INTRO: put the clip's YouTube ID into data-yt when it exists. The section shows itself once it has a video. -->
+<!-- Slot: Trey's intro. Put the YouTube ID in data-yt. -->
 <section class="gg-section gg-si-sec" id="trey" data-si-section>
 <div class="gg-wrap gg-si-grid">
 <div class="gg-si-copy">
@@ -578,13 +578,11 @@ html:has(#gg-root),body:has(#gg-root){background:#171a1a!important}
 </ul>
 </div>
 <div class="gg-si-main">
-<!-- MAIN: Chassis Underneath (Meta video 1108787821511122, 0:58). Until the MP4 is uploaded this slot plays the "Building the beast" Short.
-     When it's uploaded: data-yt="<GHL media URL>", and change the caption to "From bare frame to finished Retro Ride." -->
+<!-- Slot: main build video. Swap in the chassis reel once it's on YouTube, and change the caption to "From bare frame to finished Retro Ride." -->
 <div class="gg-vid" data-yt="e6LHUT7vmLg" data-ratio="9/16" data-title="Building one in our Jasper shop"><span class="gg-vid-cap">Building one in our Jasper shop.</span></div>
 </div>
 </div>
 <div class="gg-wrap gg-si-row">
-<!-- Removed "Inside Golfin' Garage!" (vXPJgSgycCI): its soundtrack is a commercial song (Yeat, "COME N GO"), which YouTube can block from playing on other websites ("Video unavailable"). Use only Shorts with no licensed music. -->
 <div class="gg-vid" data-yt="70vpA8iqhw4" data-ratio="9/16" data-title="Precision in every touch"><span class="gg-vid-cap">Precision in every touch.</span></div>
 <div class="gg-vid" data-yt="leG8iir3a-s" data-ratio="9/16" data-title="Inside the lab"><span class="gg-vid-cap">Inside the lab.</span></div>
 <div class="gg-vid" data-yt="WuSkZReuBss" data-ratio="9/16" data-title="Work inside the garage"><span class="gg-vid-cap">Work inside the garage.</span></div>
@@ -599,16 +597,15 @@ html:has(#gg-root),body:has(#gg-root){background:#171a1a!important}
 <p>If you have eleven minutes, follow one Retro Ride across our shop floor, from bare steel to the finished ride. This one was built against a deadline; yours gets its own timeline, set when you place your order.</p>
 </div>
 <div class="gg-wrap gg-si-wide">
-<!-- LONG-FORM: "You Won't Believe What We Built In 4.5 Days…" (YouTube vG8f0bwUCB4, 10:59). See the brief: it mentions the PGA Show. -->
+<!-- Slot: long build video. -->
 <div class="gg-vid" data-yt="vG8f0bwUCB4" data-ratio="16/9" data-title="One build, start to finish"><span class="gg-vid-cap">One build, start to finish, on our shop floor.</span></div>
 </div>
 <div class="gg-wrap gg-si-row">
-<!-- The explainer ad Ayush produced (ClickUp "Vox-style explainer video ad"). Upload it to YouTube and put its ID in data-yt; set data-ratio to match -->
+<!-- Slot: explainer video. -->
 <div class="gg-vid" data-yt="" data-ratio="9/16" data-title="The Retro Ride, explained"><span class="gg-vid-cap">The Retro Ride, explained.</span></div>
 </div>
 </section>
 
-<!-- A NOTE FROM FINLEY: DRAFT. Stays hidden until Finley approves or rewrites it. To show it, delete the word hidden below. -->
 <section class="gg-section gg-si-note" hidden>
 <div class="gg-wrap">
 <p class="gg-mono gg-si-num">A note from the owner</p>
@@ -623,10 +620,9 @@ html:has(#gg-root),body:has(#gg-root){background:#171a1a!important}
 <div class="gg-wrap gg-si-wide-head">
 <p class="gg-mono gg-si-num">03 · Up close</p>
 <h2>It’s in the Details.</h2>
-<p>The vintage dash we build ourselves, the diamond-stitched seats, the trim and the lights. Every detail on these was picked by its owner.</p>
+<p>The vintage dash we build ourselves, the diamond-stitched seats, the trim and the lights. On yours, every detail is your call.</p>
 </div>
 <div class="gg-wrap gg-si-row">
-<!-- Only Shorts with no licensed music ("Luxury from every angle!" was removed: it uses the song "Aces" by dkj). -->
 <div class="gg-vid" data-yt="ljUXkyBdvUQ" data-ratio="9/16" data-title="Built in the details"><span class="gg-vid-cap">Built in the details.</span></div>
 <div class="gg-vid" data-yt="qgl14S7Sqmk" data-ratio="9/16" data-title="Simple. Refined. Ready"><span class="gg-vid-cap">Simple. Refined. Ready.</span></div>
 <div class="gg-vid" data-yt="Jw5jFrpamRg" data-ratio="9/16" data-title="Lights on"><span class="gg-vid-cap">Lights on.</span></div>
@@ -660,9 +656,9 @@ html:has(#gg-root),body:has(#gg-root){background:#171a1a!important}
 </div>
 </div>
 <div class="gg-si-pair">
-<!-- Spouse video (Meta 1147298017532819, 0:35) -->
+<!-- Slot: spouse video. -->
 <div class="gg-vid" data-yt="" data-ratio="9/16" data-title="She won't stop riding in it"><span class="gg-vid-cap">“She won’t stop riding in it.”</span></div>
-<!-- "Didn't tell husband" UGC (Meta 2764338840652081, 0:17) -->
+<!-- Slot: "didn't tell my husband" video. -->
 <div class="gg-vid" data-yt="" data-ratio="9/16" data-title="I didn't tell my husband"><span class="gg-vid-cap">“I didn’t tell my husband.”</span></div>
 </div>
 </div>
@@ -676,7 +672,7 @@ html:has(#gg-root),body:has(#gg-root){background:#171a1a!important}
 <p>We deliver anywhere in the lower 48. This is one owner’s delivery day, start to finish.</p>
 </div>
 <div class="gg-si-main">
-<!-- Customer delivery, subtitled (Meta 4379996238906952, 1:11). Set data-ratio to match the file (9/16, 4/5 or 16/9) -->
+<!-- Slot: delivery video. Set data-ratio to match it (9/16 or 16/9). -->
 <div class="gg-vid" data-yt="" data-ratio="9/16" data-title="A real owner, a real delivery"><span class="gg-vid-cap">A real owner, a real delivery.</span></div>
 </div>
 </div>
@@ -686,16 +682,16 @@ html:has(#gg-root),body:has(#gg-root){background:#171a1a!important}
 <div class="gg-wrap gg-si-wide-head">
 <p class="gg-mono gg-si-num">07 · Out and about</p>
 <h2>Where Retro Rides Get Driven.</h2>
-<p>The coffee run, the neighborhood loop and the ride down to the dock. Every one of these was built to order for its owner.</p>
+<p>Coffee runs, the neighborhood loop and the ride down to the dock. Yours goes wherever you do.</p>
 </div>
 <div class="gg-wrap gg-si-row">
-<!-- Coffee Shop errand reel (Meta 1053683347351822, 0:16) -->
-<div class="gg-vid" data-yt="" data-ratio="9/16" data-title="The coffee run"><span class="gg-vid-cap">The coffee run.</span></div>
-<!-- "The Truck You Grew Up Wanting" (Meta 1111645881789816, 0:16) -->
+<!-- Slot: coffee run video. -->
+<div class="gg-vid" data-yt="" data-ratio="9/16" data-title="Coffee run"><span class="gg-vid-cap">Coffee run.</span></div>
+<!-- Slot: "truck you grew up wanting" video. -->
 <div class="gg-vid" data-yt="" data-ratio="9/16" data-title="The truck you grew up wanting"><span class="gg-vid-cap">The truck you grew up wanting.</span></div>
-<!-- Instagram reel "The neighborhood loop just got a serious upgrade." (instagram.com/golfin_garage/reel/Df0FfxKjBAi). Download it and upload it to YouTube -->
-<div class="gg-vid" data-yt="" data-ratio="9/16" data-title="The neighborhood loop"><span class="gg-vid-cap">The neighborhood loop.</span></div>
-<!-- Instagram reel "Life's too short for a cart that looks like everyone else's." (reel DdjpZXMjAdo, 21.9K likes). Check no badges show -->
+<!-- Slot: neighborhood loop reel. -->
+<div class="gg-vid" data-yt="" data-ratio="9/16" data-title="Around the neighborhood"><span class="gg-vid-cap">Around the neighborhood.</span></div>
+<!-- Slot: "life's too short" reel. -->
 <div class="gg-vid" data-yt="" data-ratio="9/16" data-title="Life's too short for a cart that looks like everyone else's"><span class="gg-vid-cap">Life’s too short for a cart that looks like everyone else’s.</span></div>
 </div>
 </section>

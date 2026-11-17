@@ -143,7 +143,7 @@
 
 **03 · Up close** (`#details`)
 - **H2:** It's in the Details. (their own brand line)
-- **Copy:** The vintage dash we build ourselves, the diamond-stitched seats, the trim and the lights. Every detail on these was picked by its owner.
+- **Copy:** The vintage dash we build ourselves, the diamond-stitched seats, the trim and the lights. On yours, every detail is your call.
 
 **04 · Your color** (`#colors`)
 - **H2:** Pick Your Color.
@@ -160,7 +160,7 @@
 
 **07 · Out and about** (`#around-town`)
 - **H2:** Where Retro Rides Get Driven.
-- **Copy:** The coffee run, the neighborhood loop and the ride down to the dock. Every one of these was built to order for its owner.
+- **Copy:** Coffee runs, the neighborhood loop and the ride down to the dock. Yours goes wherever you do.
 
 **Facts strip:** 100+ / Retro Rides built since 2020 · Jasper, GA / Built by hand in our shop · VIN / And a certificate of origin with every build · Lower 48 / We deliver anywhere
 
@@ -243,7 +243,7 @@ The research lists these as client-approved or their own posts, but I haven't wa
    - **Chassis reel.** Once it's on YouTube, put its ID in the `#frame` main card and update its caption.
 5. **Trey's clip and Finley's note:**
    - **Trey's clip** shows itself once its `data-yt` is filled.
-   - **Finley's note** shows when the word `hidden` is removed from its section. Only after Finley approves the wording.
+   - **Finley's note** is not in the GHL code, so an unapproved quote never sits in the page source. Once Finley approves the wording, add the note block from `page.html` (the section with class `gg-si-note`) and remove its `hidden`.
 6. **Publish, then test on a phone:**
    - Every jump link lands on its section, and videos play.
    - The phone bar shows.
