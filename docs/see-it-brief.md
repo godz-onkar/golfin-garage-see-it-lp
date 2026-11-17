@@ -64,20 +64,21 @@
 | # | Block | What's on it | Plays today? |
 |---|---|---|---|
 | 0 | Header | Logo, phone, **Pick a Time With Trey** | — |
-| 1 | Opening | Headline, one line, 6 jump links with video counts | — |
+| 1 | Opening | Headline, one line, 7 jump links with video counts | — |
 | — | Meet Trey | Trey's intro clip | Hidden until the clip exists |
-| 2 | `#frame` 01 The build | Frame, body and paint copy · main video · shop Shorts · 4 build facts | **Yes** (3 Shorts) |
+| 2 | `#frame` 01 The build | Frame, body and paint copy · main video · 4 shop Shorts · 4 build facts | **Yes** (5 Shorts) |
 | 3 | `#whole-story` 02 The whole story | **The long-form video** (10:59), full width · the explainer ad below it | **Yes** (long-form) |
 | 4 | A note from the owner | Finley's note on why they build by hand | Hidden until Finley approves it |
-| 5 | `#details` 03 Up close | 3 detail Shorts (dash, walkaround, trim) | **Yes** |
-| 6 | `#shotgun` 04 For whoever rides with you | Spouse video + "didn't tell husband" · "Pick a Time for Both of You" | When they're on YouTube |
-| 7 | `#delivery` 05 Delivery day | Customer delivery video | When on YouTube |
-| 8 | `#around-town` 06 Out and about | 4 Meta reels + 2 Instagram reels | When on YouTube |
+| 5 | `#details` 03 Up close | 6 detail Shorts (seats, lights, stance, frunk) | **Yes** |
+| 5b | `#colors` 04 Your color | 4 color Shorts · "bring a color idea" | **Yes** |
+| 6 | `#shotgun` 05 For whoever rides with you | Spouse video + "didn't tell husband" · "Pick a Time for Both of You" | When they're on YouTube |
+| 7 | `#delivery` 06 Delivery day | Customer delivery video | When on YouTube |
+| 8 | `#around-town` 07 Out and about | 4 Meta reels + 2 Instagram reels | When on YouTube |
 | 9 | Facts strip | 100+ since 2020 · Jasper, GA · VIN · lower 48 | — |
 | 10 | Closing call to action | "Design Yours With Trey" · button · booked line · phone | — |
 | 11 | Footer + phone bar | The live template's footer and sticky phone bar | — |
 
-**On launch day,** with only the YouTube videos, the page shows 3 sections and 6 videos. Each video added to YouTube makes its section appear.
+**On launch day,** with only the YouTube videos, the page shows 4 sections and 16 videos. Each video added to YouTube makes its section appear.
 
 ## 4. Design
 
@@ -144,16 +145,20 @@
 - **H2:** It's in the Details. (their own brand line)
 - **Copy:** The vintage dash we build ourselves, the diamond-stitched seats, the trim and the lights. Every detail on these was picked by its owner.
 
-**04 · For whoever rides with you** (`#shotgun`)
+**04 · Your color** (`#colors`)
+- **H2:** Pick Your Color.
+- **Copy:** Paint is one of the first things you'll choose with Trey: any color, including custom two-tone. Bring a photo, a paint chip or an old truck you loved. (From the live prep page.)
+
+**05 · For whoever rides with you** (`#shotgun`)
 - **H2:** Show the Person Riding Shotgun.
 - **Copy:** Most Retro Rides get decided by two people. If yours includes someone who isn't sold yet, start them here.
 - **Button:** Pick a Time for Both of You · *Each of you can join from your own phone.*
 
-**05 · Delivery day** (`#delivery`)
+**06 · Delivery day** (`#delivery`)
 - **H2:** The Day It Comes Home.
 - **Copy:** We deliver anywhere in the lower 48. This is one owner's delivery day, start to finish.
 
-**06 · Out and about** (`#around-town`)
+**07 · Out and about** (`#around-town`)
 - **H2:** Where Retro Rides Get Driven.
 - **Copy:** The coffee run, the neighborhood loop and the ride down to the dock. Every one of these was built to order for its owner.
 
@@ -171,19 +176,29 @@
 - No rendering language.
 - Facts come only from the approved list or from approved W14, W15 and W4 copy.
 
-## 6. Videos (18 slots)
+## 6. Videos (28 slots)
 
 | Section | Video | Source | Length | Status |
 |---|---|---|---|---|
 | Meet Trey | Trey's intro | Not filmed yet (L6) | ~1 min | Need |
 | `#frame` main | Chassis Underneath ("Retro on the outside. Built for right now underneath.") | Meta 1108787821511122 | 0:58 | Needs to go on YouTube. A Short stands in |
 | `#frame` row | "Building the beast!" | YouTube Short e6LHUT7vmLg | short | **Live** (hidden while it's also the main) |
-| `#frame` row | "Work inside the garage!" | YouTube Short WuSkZReuBss | short | **Live** |
+| `#frame` row | "Inside Golfin' Garage!" (frame welding) | YouTube Short 70vpA8iqhw4 | 0:12 | **Live** |
+| `#frame` row | "Take a look inside the lab!" | YouTube Short leG8iir3a-s | 0:13 | **Live** |
+| `#frame` row | "Work inside the garage!" | YouTube Short WuSkZReuBss | 0:12 | **Live** |
+| `#frame` row | "Final checks!" | YouTube Short 7-uFf0sgVxs | 0:06 | **Live** |
 | `#whole-story` | **"You Won't Believe What We Built In 4.5 Days…"** (long-form) | YouTube vG8f0bwUCB4 | 10:59 | **Live**, see D2 |
 | `#whole-story` | The explainer ad (Ayush's "Vox-style explainer") | Ayush's file | ? | Needs to go on YouTube |
-| `#details` | "Luxury from every angle!" (dash and teak floor) | YouTube Short xrmbkT2kpQk | short | **Live**. Has a music track ("Aces", dkj); plays on the page today, but check it on a phone after publishing |
-| `#details` | "Simple. Refined. Ready." (walkaround) | YouTube Short qgl14S7Sqmk | short | **Live** |
-| `#details` | "Yellow beast!" (walkaround) | YouTube Short icWAkbUZWFw | short | **Live** |
+| `#details` | "Built in the Details" | YouTube Short ljUXkyBdvUQ | 0:13 | **Live** |
+| `#details` | "Simple. Refined. Ready." (seats) | YouTube Short qgl14S7Sqmk | 0:07 | **Live** |
+| `#details` | "Lights on, presence felt!" | YouTube Short Jw5jFrpamRg | 0:13 | **Live** |
+| `#details` | "Strong stance, clean details!" | YouTube Short UoNWxlUGOKA | 0:11 | **Live** |
+| `#details` | "Custom-built frunk!" | YouTube Short wBDTEAbmXnU | 0:12 | **Live** |
+| `#details` | "Luxury on wheels!" | YouTube Short HTAgd3wvQF8 | 0:14 | **Live** |
+| `#colors` | "Different colors, which one are you taking?" | YouTube Short 9ovWiJvatQ4 | 0:17 | **Live** |
+| `#colors` | "Yellow beast!" | YouTube Short icWAkbUZWFw | 0:11 | **Live** |
+| `#colors` | "You've never seen 'Yellow' like this!" | YouTube Short mqpGIenx9Gs | 0:11 | **Live** |
+| `#colors` | "Choose your weapon!" | YouTube Short BRnIihdMCB8 | 0:12 | **Live** |
 | `#shotgun` | Spouse video ("she won't stop riding in it") | Meta 1147298017532819 | 0:35 | Needs to go on YouTube |
 | `#shotgun` | "Didn't tell husband" UGC | Meta 2764338840652081 | 0:17 | Needs to go on YouTube |
 | `#delivery` | Customer delivery, subtitled | Meta 4379996238906952 | 1:11 | Needs to go on YouTube |
@@ -198,6 +213,7 @@
 
 | Video | Why |
 |---|---|
+| Shorts with a licensed song: "Luxury from every angle!" (xrmbkT2kpQk, "Aces" by dkj), "Finished the right way!" (At5PfblPGMU), "Before & After" (iQoCyE7QB-U), "Red or White?" (qh0VUz1jebY), "Gloss Black Color" (R18xF6Ak6AQ) | Same music risk as below. Each has a song credited on YouTube |
 | "Inside Golfin' Garage!" (YouTube Short vXPJgSgycCI) | Its soundtrack is a commercial song (Yeat, "COME N GO"). YouTube can block songs like that from playing on other websites, by country or device, and the player then shows "Video unavailable". **Rule for every video on this page: no licensed music.** Ask Rabih for a version with no music or the original audio |
 | "Golfin' Garage Retro Ride" Q&A (YouTube YbWxbvOPjys, 3:00; the hidden "film" on the landing page) | Shows a Porsche and says "47 or 48 mph." Kept for research only |
 | "Bronco Dream" ads, the GolfCartingTV shop tour, Bronco-titled Shorts | The Bronco name |
@@ -254,7 +270,7 @@ The `#` jump always goes **after** the UTMs.
 |---|---|---|
 | S1 | One page, many videos in sections, no variants? | **Yes** |
 | S2 | Every button goes to `/design-meeting` (free calendar)? | **Yes** |
-| S3 | Go live with the YouTube videos (3 sections, 6 videos), and let the rest appear as each one goes on YouTube? | **Yes** |
+| S3 | Go live with the YouTube videos (4 sections, 16 videos), and let the rest appear as each one goes on YouTube? | **Yes** |
 | D2 | The long-form video: the earlier decision was to cut out its PGA Show mentions first. Use the full YouTube video now, or wait for Rabih's cut? | **Use it now, with the "built against a deadline" line**, and swap in the cut when it's ready. Say no if any PGA mention is a deal-breaker |
 | D3 | Finley's note: send the draft to Finley to approve or rewrite? | **Yes.** It stays hidden until Finley answers |
 | S4 | Copy in section 5? | Approve or mark up |
