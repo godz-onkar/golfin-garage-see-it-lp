@@ -815,12 +815,20 @@ html:has(#gg-root),body:has(#gg-root){background:#171a1a!important}
   });
 
   // 6. Arriving from an email button (/see-it?utm...#frame): land on that section.
+  // The browser's own smooth scroll to the #link can aim at a stale spot while the page is still laying out,
+  // so settle on the section a few times after load, and stop as soon as the visitor scrolls on their own.
+  var userMoved=false;
+  ['wheel','touchstart','keydown','mousedown'].forEach(function(ev){ window.addEventListener(ev,function(){userMoved=true},{passive:true,once:true}); });
   function land(){
-    var id=decodeURIComponent((location.hash||'').slice(1)); if(!id)return;
+    var id=decodeURIComponent((location.hash||'').slice(1)); if(!id||userMoved)return;
     var sec=document.getElementById(id); if(!sec||!root.contains(sec)||sec.hidden)return;
-    setTimeout(function(){ sec.scrollIntoView({block:'start',behavior:'instant'}); },60);
+    var html=document.documentElement, prev=html.style.scrollBehavior; html.style.scrollBehavior='auto';
+    sec.scrollIntoView({block:'start',behavior:'instant'});
+    html.style.scrollBehavior=prev;
   }
-  land(); window.addEventListener('load',land); window.addEventListener('hashchange',land);
+  function settle(){ [60,400,1000,1800].forEach(function(t){ setTimeout(land,t); }); }
+  settle(); window.addEventListener('load',settle);
+  window.addEventListener('hashchange',function(){ userMoved=false; land(); });
 
   // 7. Carry this page's UTMs through to the calendar link (same approach as the Build Book page).
   var qs=location.search.replace(/([?&])review=1(&|$)/,'$1').replace(/[?&]$/,'');
