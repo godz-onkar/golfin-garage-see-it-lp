@@ -186,7 +186,7 @@
 | `#frame` row | "Take a look inside the lab!" | YouTube Short leG8iir3a-s | 0:13 | **Live** |
 | `#frame` row | "Work inside the garage!" | YouTube Short WuSkZReuBss | 0:12 | **Live** |
 | `#frame` row | "Final checks!" | YouTube Short 7-uFf0sgVxs | 0:06 | **Live** |
-| `#whole-story` | **"You Won't Believe What We Built In 4.5 Days…"** (long-form) | YouTube vG8f0bwUCB4 | 10:59 | **Live**, see D2 |
+| `#whole-story` | **"You Won't Believe What We Built In 4.5 Days…"** (long-form) | YouTube vG8f0bwUCB4 | 10:59 | **Live.** Full video as is, PGA Show mentions included (D2, decided Nov 18) |
 | `#whole-story` | The explainer ad (Ayush's "Vox-style explainer") | Ayush's file | ? | Needs to go on YouTube |
 | `#details` | "Built in the Details" | YouTube Short ljUXkyBdvUQ | 0:13 | **Live** |
 | `#details` | "Simple. Refined. Ready." (seats) | YouTube Short qgl14S7Sqmk | 0:07 | **Live** |
@@ -268,6 +268,6 @@ The `#` jump always goes **after** the UTMs.
 | S1 | One page, many videos in sections, no variants? | **Yes** |
 | S2 | Every button goes to `/design-meeting` (free calendar)? | **Yes** |
 | S3 | Go live with the YouTube videos (4 sections, 14 videos), and let the rest appear as each one goes on YouTube? | **Yes** |
-| D2 | The long-form video: the earlier decision was to cut out its PGA Show mentions first. Use the full YouTube video now, or wait for Rabih's cut? | **Use it now, with the "built against a deadline" line**, and swap in the cut when it's ready. Say no if any PGA mention is a deal-breaker |
+| D2 | The long-form video: use the full YouTube video now, or wait for a cut without the PGA Show mentions? | **Decided by Onkar, Nov 18: keep the full 11-minute YouTube video on the page as is.** The "built against a deadline" line stays above it |
 | D3 | Finley's note: send the draft to Finley to approve or rewrite? | **Yes.** It stays hidden until Finley answers |
 | S4 | Copy in section 5? | Approve or mark up |
