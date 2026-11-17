@@ -66,19 +66,19 @@
 | 0 | Header | Logo, phone, **Pick a Time With Trey** | — |
 | 1 | Opening | Headline, one line, 7 jump links with video counts | — |
 | — | Meet Trey | Trey's intro clip | Hidden until the clip exists |
-| 2 | `#frame` 01 The build | Frame, body and paint copy · main video · 4 shop Shorts · 4 build facts | **Yes** (5 Shorts) |
+| 2 | `#frame` 01 The build | Frame, body and paint copy · main video · a row of 4 shop Shorts · 4 build facts | **Yes** (5 Shorts) |
 | 3 | `#whole-story` 02 The whole story | **The long-form video** (10:59), full width · the explainer ad below it | **Yes** (long-form) |
 | 4 | A note from the owner | Finley's note on why they build by hand | Hidden until Finley approves it |
-| 5 | `#details` 03 Up close | 6 detail Shorts (seats, lights, stance, frunk) | **Yes** |
+| 5 | `#details` 03 Up close | 4 detail Shorts (details, seats, lights, frunk) | **Yes** |
 | 5b | `#colors` 04 Your color | 4 color Shorts · "bring a color idea" | **Yes** |
 | 6 | `#shotgun` 05 For whoever rides with you | Spouse video + "didn't tell husband" · "Pick a Time for Both of You" | When they're on YouTube |
 | 7 | `#delivery` 06 Delivery day | Customer delivery video | When on YouTube |
-| 8 | `#around-town` 07 Out and about | 4 Meta reels + 2 Instagram reels | When on YouTube |
+| 8 | `#around-town` 07 Out and about | 2 Meta reels + 2 Instagram reels | When on YouTube |
 | 9 | Facts strip | 100+ since 2020 · Jasper, GA · VIN · lower 48 | — |
 | 10 | Closing call to action | "Design Yours With Trey" · button · booked line · phone | — |
 | 11 | Footer + phone bar | The live template's footer and sticky phone bar | — |
 
-**On launch day,** with only the YouTube videos, the page shows 4 sections and 16 videos. Each video added to YouTube makes its section appear.
+**On launch day,** with only the YouTube videos, the page shows 4 sections and 14 videos. Each video added to YouTube makes its section appear.
 
 ## 4. Design
 
@@ -98,7 +98,7 @@
 - **YouTube embeds with our own cover.** Every video is a YouTube player on the page. Before it plays, a cover with the video's thumbnail and our orange play button sits over YouTube's start screen, so the red Shorts logo and title bar don't show. The tap goes straight through to YouTube's player, so it plays with sound on phones. The cover comes back when a Short pauses or ends, which also hides YouTube's "more videos" screen. While a Short is playing, YouTube still shows its small Shorts label and like/share buttons; no embed setting removes those. Nothing autoplays, and players lower on the page load only as the visitor scrolls to them. Starting one video pauses the others.
 - **Each card shows** the player and a caption.
 - **Phones:** one video per row, about 340 px wide. In each section the video comes right after the heading and opening line, before the fact list and button. Rows with more than 2 videos show 2, then a "Show more videos" button.
-- **Grid.** 4 per row on desktop, 3 on tablet, 1 on a phone.
+- **Grid.** At most 4 Shorts per row, on one line on desktop (3 per row on a tablet, 1 on a phone). The code also hides anything past the fourth, so a row never grows past four.
 - **No empty players.** A card with no YouTube ID stays hidden. A section with no videos hides itself and its jump link.
 
 **About the "Video unavailable" message:**
@@ -176,13 +176,12 @@
 - No rendering language.
 - Facts come only from the approved list or from approved W14, W15 and W4 copy.
 
-## 6. Videos (28 slots)
+## 6. Videos (24 slots)
 
 | Section | Video | Source | Length | Status |
 |---|---|---|---|---|
 | Meet Trey | Trey's intro | Not filmed yet (L6) | ~1 min | Need |
 | `#frame` main | Chassis Underneath ("Retro on the outside. Built for right now underneath.") | Meta 1108787821511122 | 0:58 | Needs to go on YouTube. A Short stands in |
-| `#frame` row | "Building the beast!" | YouTube Short e6LHUT7vmLg | short | **Live** (hidden while it's also the main) |
 | `#frame` row | "Inside Golfin' Garage!" (frame welding) | YouTube Short 70vpA8iqhw4 | 0:12 | **Live** |
 | `#frame` row | "Take a look inside the lab!" | YouTube Short leG8iir3a-s | 0:13 | **Live** |
 | `#frame` row | "Work inside the garage!" | YouTube Short WuSkZReuBss | 0:12 | **Live** |
@@ -192,13 +191,11 @@
 | `#details` | "Built in the Details" | YouTube Short ljUXkyBdvUQ | 0:13 | **Live** |
 | `#details` | "Simple. Refined. Ready." (seats) | YouTube Short qgl14S7Sqmk | 0:07 | **Live** |
 | `#details` | "Lights on, presence felt!" | YouTube Short Jw5jFrpamRg | 0:13 | **Live** |
-| `#details` | "Strong stance, clean details!" | YouTube Short UoNWxlUGOKA | 0:11 | **Live** |
 | `#details` | "Custom-built frunk!" | YouTube Short wBDTEAbmXnU | 0:12 | **Live** |
-| `#details` | "Luxury on wheels!" | YouTube Short HTAgd3wvQF8 | 0:14 | **Live** |
 | `#colors` | "Different colors, which one are you taking?" | YouTube Short 9ovWiJvatQ4 | 0:17 | **Live** |
 | `#colors` | "Yellow beast!" | YouTube Short icWAkbUZWFw | 0:11 | **Live** |
-| `#colors` | "You've never seen 'Yellow' like this!" | YouTube Short mqpGIenx9Gs | 0:11 | **Live** |
-| `#colors` | "Choose your weapon!" | YouTube Short BRnIihdMCB8 | 0:12 | **Live** |
+| `#colors` | "Orange Golf Cart!" (caption: "In orange.") | YouTube Short yiLrZoq89Ag | short | **Live** |
+| `#colors` | "All eyes on this car!" (red) | YouTube Short n8VXfgLciMY | short | **Live** |
 | `#shotgun` | Spouse video ("she won't stop riding in it") | Meta 1147298017532819 | 0:35 | Needs to go on YouTube |
 | `#shotgun` | "Didn't tell husband" UGC | Meta 2764338840652081 | 0:17 | Needs to go on YouTube |
 | `#delivery` | Customer delivery, subtitled | Meta 4379996238906952 | 1:11 | Needs to go on YouTube |
@@ -206,8 +203,8 @@
 | `#around-town` | "The Truck You Grew Up Wanting" | Meta 1111645881789816 | 0:16 | Needs to go on YouTube |
 | `#around-town` | "The neighborhood loop just got a serious upgrade." | IG reel Df0FfxKjBAi | short | Needs to go on YouTube |
 | `#around-town` | "Life's too short for a cart that looks like everyone else's." (21.9K likes) | IG reel DdjpZXMjAdo | short | Needs to go on YouTube; check no badges show |
-| `#around-town` | "Any hobby gets 10x better" | Meta 2180767295834515 | 0:12 | Needs to go on YouTube |
-| `#around-town` | "Some decisions are easy" | Meta 1718440376042520 | 0:10 | Needs to go on YouTube |
+
+**Alternates** (no song, cut only to keep each row at four): "Building the beast!" (e6LHUT7vmLg, it's the main build video until the chassis reel is on YouTube), "Strong stance, clean details!" (UoNWxlUGOKA), "Luxury on wheels!" (HTAgd3wvQF8), "You've never seen 'Yellow' like this!" (mqpGIenx9Gs, a second yellow), "Choose your weapon!" (BRnIihdMCB8), "Custom golf cart (red edition)" (ED9pxelAUqw), "Here comes the legend!" (WCEGMbWdKXA), "This cart is built to be noticed!" (jevLDDQHs3Q), and the Meta reels "Hobby 10x" (2180767295834515) and "Easy Decision" (1718440376042520).
 
 **Left off on purpose:**
 
@@ -270,7 +267,7 @@ The `#` jump always goes **after** the UTMs.
 |---|---|---|
 | S1 | One page, many videos in sections, no variants? | **Yes** |
 | S2 | Every button goes to `/design-meeting` (free calendar)? | **Yes** |
-| S3 | Go live with the YouTube videos (4 sections, 16 videos), and let the rest appear as each one goes on YouTube? | **Yes** |
+| S3 | Go live with the YouTube videos (4 sections, 14 videos), and let the rest appear as each one goes on YouTube? | **Yes** |
 | D2 | The long-form video: the earlier decision was to cut out its PGA Show mentions first. Use the full YouTube video now, or wait for Rabih's cut? | **Use it now, with the "built against a deadline" line**, and swap in the cut when it's ready. Say no if any PGA mention is a deal-breaker |
 | D3 | Finley's note: send the draft to Finley to approve or rewrite? | **Yes.** It stays hidden until Finley answers |
 | S4 | Copy in section 5? | Approve or mark up |
